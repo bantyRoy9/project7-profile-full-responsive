@@ -100,3 +100,11 @@ introSections.forEach(function (intro) {
   sectionObservers.observe(intro);
   intro.classList.add('intro--hidden');
 });
+
+
+
+const preloader = document.getElementById("preloader");
+
+window.addEventListener("load" ,function(){
+  preloader.style.display='none'
+})

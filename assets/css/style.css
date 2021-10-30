@@ -71,12 +71,19 @@ html {
 
 body {
     /* margin: 0 0 var(--header-height) 0; */
-    background-color: var(--body-color);
+    background-color: whitesmoke;
     font-size: var(--normal-font-size);
     font-family: var(--body-font);
     color: var(--text-color);
 }
 
+#preloader{
+    background: #000;
+    width:100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 1;
+}
 h1,
 h2,
 h3,
@@ -837,14 +844,24 @@ img {
     display: none;
 }
 @media (min-width:770px) {
+   body{
+    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.2));
+   }
     .header {
         top: 0;
         bottom: initial;
         height: 8vh;
         position: fixed;
-        /* background: transparent; */
+        background: transparent;
     }
-
+    #preloader{
+        background: #000 url('/assets/img/circle-loader-gif-2.gif') no-repeat center center;
+        width:10%;
+        height: 10%;
+        position: fixed;
+        z-index: 100;
+        /* background-size: 70px;; */
+    }
     .container {
         max-width: 87vw;
         margin: auto;
@@ -971,7 +988,8 @@ img {
         padding: 50px;
         align-items: center;
         height: 100vh;
-        /* border: 2px solid black; */
+        background: linear-gradient(#006788,rgba(0,0,0,0.5));
+        
     }
     
     .intro h1 {
@@ -979,13 +997,19 @@ img {
         font-size: 4vw;
         width: 90%;
         font-weight: 900;
-        margin-top: 20vh;
+        margin-top: 80px;
+        margin-left: 40px;
+        color: rgb(243, 235, 235);
+        -webkit-test-stroke:2px rgb(7, 7, 7);
+        
     }
-
+    
+    
     .intro a {
-        background-color: white;
+        background-color: transparent;
         color: var(--first-color);
         width: 28vw;
+        margin-left: 40px;
         font-size: 1.5vw;
         font-weight: 600;
         margin-top: 3vh;
@@ -1006,7 +1030,20 @@ img {
     }
 
     .name {
-        color: var(--first-color-alt);
+        font-size: 100px;
+        color: transparent;
+        -webkit-text-stroke: 1px #FFF;
+        background: url('/assets/back.png');
+        -webkit-background-clip: text;
+        background-position: 0 0;
+        animation: back 20s linear infinite;
+        text-transform: uppercase;
+    }
+    @keyframes back {
+        100%{
+            background-position: 5000px 0;
+
+        }
     }
 
 
