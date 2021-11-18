@@ -844,9 +844,10 @@ img {
     display: none;
 }
 @media (min-width:770px) {
-   body{
-    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.2));
-   }
+   /* body{
+
+
+   } */
     .header {
         top: 0;
         bottom: initial;
@@ -989,7 +990,6 @@ img {
         align-items: center;
         height: 100vh;
         background: linear-gradient(#006788,rgba(0,0,0,0.5));
-        
     }
     
     .intro h1 {
@@ -997,8 +997,8 @@ img {
         font-size: 4vw;
         width: 90%;
         font-weight: 900;
-        margin-top: 80px;
-        margin-left: 40px;
+        margin-top: 50px;
+        margin-left: 80px;
         color: rgb(243, 235, 235);
         -webkit-test-stroke:2px rgb(7, 7, 7);
         
@@ -1009,7 +1009,7 @@ img {
         background-color: transparent;
         color: var(--first-color);
         width: 28vw;
-        margin-left: 40px;
+        margin-left: 80px;
         font-size: 1.5vw;
         font-weight: 600;
         margin-top: 3vh;
@@ -1075,8 +1075,8 @@ img {
 
 
     .about {
-        background-color: #02aab0;
-        background-image: linear-gradient(135deg, #02aab0, #00cdac);
+        background-color: #101414;
+        background-image: linear-gradient(135deg, #006788, #006778);
         color: #fff;
         height: 100vh;
         border-top: 0;
@@ -1108,7 +1108,7 @@ img {
     }
     .home__blob {
         width: 355px;
-        fill: var(--first-color);
+        fill: rgba(0, 0, 0, .6);
     }
     
     .home__blob-img {
@@ -1171,7 +1171,8 @@ img {
     .skills__container{
         display: flex;
         flex-direction: column;
-        row-gap: 5vw;
+        row-gap: 3vw;
+        align-items: center;
     }
 
     .about__skills{
@@ -1348,8 +1349,8 @@ img {
 
 
     .contact {
-        background-color: #02aab0;
-        background-image: linear-gradient(135deg, #02aab0, #00cdac);
+        background-color: #101414;
+        background-image: linear-gradient(135deg, #006788, #006778);
         color: #fff;
         height: 100vh;
         border-top: 0;
@@ -1364,7 +1365,9 @@ img {
     .footer {
         padding-top:0;
         height: 47vh;
-        background-image: linear-gradient(135deg, #02aab0, #00cdac);
+        background: #040714;
+        background-image: none;
+        /* background-image: linear-gradient(135deg, #02aab0, #00cdac); */
         
     }
     .contact--btn:hover{
@@ -1376,8 +1379,9 @@ img {
     
     .footer__bg {
         border-radius: 1vw 1vw 0px 0px;
-        /* background-color:rgb(26, 38, 43); */
-        padding: 2rem 0 3rem;
+        /* background:none; */
+        /* padding: 2rem 0 3rem; */
+        background: linear-gradient(#006788,rgba(0,0,0,0.5));
     }
     
 }
